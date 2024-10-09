@@ -24,6 +24,7 @@ html, body {
     width: 100%;
     height: 100vh;
     margin: 0;
+    flex-direction: row;
 }
 
 /* TODO font styling*/
@@ -52,7 +53,7 @@ h2 {
 .leftSide {
     /* background-color: #007bff; */
     background-image: url('../Images/toy-construction.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #ffffff;
@@ -67,7 +68,15 @@ h2 {
     height: 100%;
 }
 
+hr {
+    width: 40%;
+    border: 1px solid white;
 
+}
+
+p {
+    font-weight: 300;
+}
 
 /* TODO rightSide*/
 
@@ -83,11 +92,6 @@ h2 {
     height: 100%;
 }
 
-hr {
-    width: 40%;
-    border: .5px solid black;
-
-}
 
 /* TODO style contact icons */
 .contactInfo {
@@ -112,7 +116,7 @@ form {
 input, textarea, button {
     margin-bottom: 5px;
     padding: 5px;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 #submit {
