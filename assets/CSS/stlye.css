@@ -139,7 +139,7 @@ h2 {
 
 
 /* Responsive stacking on smaller screens */
-@media (max-width: 500px) {
+@media (max-width: 1534px) {
     .containerM {
         flex-direction: column; /* Stack the sections vertically */
     }
