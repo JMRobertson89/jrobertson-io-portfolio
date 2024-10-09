@@ -29,9 +29,9 @@
             <div>
                 <h2>Contact</h2>
                 <form class="form-container" id="contactForm" action="https://formsubmit.co/6922f790a89cc4c4d20250adaa75ebb8" method="POST">
-                    <input id="name" type="name" placeholder="Name" />
-                    <input id="emailAddress" type="email" placeholder="Email" />
-                    <textarea name="" id="contactForm" placeholder="Message"></textarea>
+                    <input id="name" type="text" name="name" placeholder="Name" required>
+                    <input id="emailAddress" type="text" name="email" placeholder="Email" required>
+                    <textarea name="message" id="contactForm" placeholder="Message" required></textarea>
                     <button class="btn btn-dark" style="height: 30px;" type="submit">Submit</button>
                 </form>
             </div>
