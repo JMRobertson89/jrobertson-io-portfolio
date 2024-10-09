@@ -29,6 +29,10 @@
             <div>
                 <h2>Contact</h2>
                 <form class="form-container" id="contactForm" action="https://formsubmit.co/6922f790a89cc4c4d20250adaa75ebb8" method="POST">
+                    <!-- Honeypot-->
+                    <input type="text" name="_honey" style="display: none;">
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
                     <input id="name" type="text" name="name" placeholder="Name" required>
                     <input id="emailAddress" type="text" name="email" placeholder="Email" required>
                     <textarea name="message" id="contactForm" placeholder="Message" required></textarea>
