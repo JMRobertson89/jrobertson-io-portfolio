@@ -192,9 +192,57 @@ nav .right a span {
     text-align: center;
 }
 
+.projects-section iframe {
+    border-radius: 5%;
+    border: 1px var(--text-color);
+    transition: transform 0.1s ease-in-out;
+}
+
 .projects-section .project img {
     height: 400px;
     width: 600px;
+    border-radius: 5%;
+    border: 2px solid;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container .hover-text {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    
+    /* Position the text */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.image-container:hover .hover-text {
+    visibility: visible;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+.projects-section .project:hover iframe {
+    transform: scale(1.05);
+}
+
+.projects-section .project h3 {
+    padding: 20px;
 }
 
 .projects-section .project h3 {
