@@ -18,6 +18,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
     max-width: 2000px;
+    margin: 0 auto;
 }
 
 a {
@@ -39,6 +40,9 @@ nav .left a {
     color: var(--text-color);
     font-size: 24px;
     font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
 }
 
 nav .right a {
@@ -63,6 +67,8 @@ nav .right a:hover {
 nav .right a span {
     margin-left: 5px;
 }
+
+
 
 /* SECTION 1 Hero */
 
@@ -182,10 +188,16 @@ nav .right a span {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 50px;
     margin-bottom: 100px;
+}
+
+.projects-section .project p {
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .projects-section .project {
@@ -207,43 +219,19 @@ nav .right a span {
     cursor: pointer;
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.image-container .hover-text {
-    visibility: hidden;
-    width: 150px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 3px;
-    
-    /* Position the text */
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
 
 .image-container:hover .hover-text {
     visibility: visible;
 }
 
 .image-container:hover img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
-.projects-section .project:hover iframe {
-    transform: scale(1.05);
+.image-container:hover iframe {
+    transform: scale(1.02);
 }
 
-.projects-section .project h3 {
-    padding: 20px;
-}
 
 .projects-section .project h3 {
     padding: 20px;
@@ -306,14 +294,19 @@ nav .right a span {
 
 /* MEDIA */
 
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
     /* SECTION 3 Project Div */
     .projects-section {
         grid-template-columns: 1fr;
     }
+
+    .projects-section .project p {
+        max-width: 50%;
+        margin: 0 auto;
+    }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     /* SECTION 1 Hero */
     .hero-section .text h2 {
         font-size: 35px;
@@ -322,15 +315,6 @@ nav .right a span {
         font-size: 35px;
     }
 
-    
-    /* SECTION 2 Skills */
-    .skills-section h2 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 740px) {
-    /* SECTION 1 Hero */
     .hero-section {
         flex-direction: column-reverse;
     }
@@ -339,18 +323,41 @@ nav .right a span {
         width: 300px;
     }
 
-    /* SECTION 3 Projects */
-    .projects-section .project img {
-        height: 300px;
+    
+    /* SECTION 2 Skills */
+    .skills-section h2 {
+        font-size: 35px;
+    }
+
+    .projects-section .project p {
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     /* SECTION 4 Contact */
     .contact-section .group {
         flex-direction: column;
     }
-
 }
 
+@media (max-width: 850px) {
+  /* navbar */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a{
+        font-size: 20px;
+    }
+
+    nav .right a:last-child {
+        padding: 0 10px;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+}
 
 
 @media (max-width: 700px) {
@@ -404,11 +411,51 @@ nav .right a span {
     }
 }
 
+@media (max-width: 630px) {
+      /* SECTION 3 Projects */
+    .projects-section .project img {
+        height: 300px;
+        width: 450px;
+    }
+
+    .projects-section .project iframe {
+        height: 300px;
+        width: 450px;
+    }
+}
 
 
 @media (max-width: 500px) {
     /* SECTION 3 Projects */
-    .projects-section .project img {
-        height: 200px;
+    .project img,
+    .project iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
+}
+
+@media (max-width: 450px) {
+    /* Left Nav */
+    nav .left a {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .left .first-name {
+        margin-bottom: -5px;  
+        line-height: 1;  
+    }
+
+}
+
+@media (max-width: 390px) {
+    .project img,
+    .project iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
 }
