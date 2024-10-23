@@ -340,7 +340,7 @@ nav .right a span {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 910px) {
   /* navbar */
     nav {
         padding: 0 20px;
@@ -433,10 +433,7 @@ nav .right a span {
         max-width: 100%;
         height: auto;
     }
-}
-
-@media (max-width: 450px) {
-    /* Left Nav */
+      /* Left Nav */
     nav .left a {
         flex-direction: column;
         align-items: flex-start;
@@ -446,16 +443,23 @@ nav .right a span {
         margin-bottom: -5px;  
         line-height: 1;  
     }
-
 }
 
-@media (max-width: 390px) {
+
+@media (max-width: 400px) {
     .project img,
     .project iframe {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+}
+   /* Left Nav */
+    nav .left a {
+        font-size: 20px;
 }
 
+nav .right a{
+    font-size: 18px;
+}
 
 }
