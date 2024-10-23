@@ -20,19 +20,19 @@ header {
 /* ARTICLES */
 
 .articles {
-    padding: 0 50px;
+    padding: 0 100px;
     margin-bottom: 100px;
+    max-width: 80%;
 }
 
 .articles h2 {
-    text-align: center;
     font-size: 35px;
-    padding: 20px;
+    
 
 }
 
-.articles p {
-    text-align: center;
+.publish {
+    
     margin-bottom: 20px;
 }
 
