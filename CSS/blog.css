@@ -13,7 +13,34 @@
 header {
     text-align: center;
     font-size: 25px;
-    padding: 20px;
+    padding: 10px;
+}
+
+/* Articles Box */
+
+.articleBox {
+    width: 90%;
+    margin: 50px auto;
+    padding-left: 10px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: solid 2px gray;
+    border-radius: 10px;   
+}
+
+.articleBox h2 {
+    font-size: 35px;
+}
+
+.articleLink {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.clickToRead {
+    margin-bottom: 20px;
+    color: blue;
 }
 
 
@@ -22,6 +49,7 @@ header {
 .articles {
     padding: 0 100px;
     margin-bottom: 100px;
+    margin-top: 50px;
     
 }
 
@@ -32,7 +60,6 @@ header {
 }
 
 .publish {
-    
     margin-bottom: 20px;
 }
 
@@ -42,4 +69,14 @@ footer {
     position: relative;
     bottom: -40px;
     width: 100%;
+}
+
+/* Back To Top */
+
+@media (max-width: 500px) {
+    .articles {
+        max-width: 90%; /* Increase the width */
+        padding: 10px; /* Adjust padding as needed */
+        padding-left: 30px;
+    }
 }

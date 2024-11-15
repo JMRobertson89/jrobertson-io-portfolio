@@ -340,6 +340,27 @@ nav .right a span {
     }
 }
 
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    padding: 0 20px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+footer .right a {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+
 @media (max-width: 910px) {
   /* navbar */
     nav {
@@ -357,6 +378,15 @@ nav .right a span {
     nav .right a span {
         display: none;
     }
+}
+
+.articleBox {
+    margin: 50px auto;
+    padding-left: 10px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: solid 2px gray;
+    border-radius: 10px;   
 }
 
 
@@ -409,6 +439,11 @@ nav .right a span {
     .contact-section {
         padding: 0 20px
     }
+
+    .articleBox {
+        padding: 0 20px;
+    }
+
 }
 
 @media (max-width: 630px) {
