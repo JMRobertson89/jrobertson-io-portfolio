@@ -1,10 +1,14 @@
+body {
+    padding: 30px;
+}
+
 /* BACK BUTTON */
 
 .back-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    margin-top: 10px;
     height: 10px;
 }
 
@@ -47,7 +51,6 @@ header {
 /* ARTICLES */
 
 .articles {
-    padding: 0 100px;
     margin-bottom: 100px;
     margin-top: 50px;
     
@@ -71,12 +74,3 @@ footer {
     width: 100%;
 }
 
-/* Back To Top */
-
-@media (max-width: 500px) {
-    .articles {
-        max-width: 90%; /* Increase the width */
-        padding: 10px; /* Adjust padding as needed */
-        padding-left: 30px;
-    }
-}
